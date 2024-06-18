@@ -1,5 +1,9 @@
 import asyncio
 import logging
+import os
+import sys
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from aiogram import Dispatcher, Bot
 from aiogram.client.default import DefaultBotProperties
@@ -7,8 +11,8 @@ from aiogram.enums import ParseMode
 from aiogram.filters import Command
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, WebAppInfo, Message
 from data.UserRepository import UserRepository
-
 from config import BOT_TOKEN
+
 
 dp = Dispatcher()
 
