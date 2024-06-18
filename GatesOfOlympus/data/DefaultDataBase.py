@@ -1,7 +1,7 @@
 import pymysql
 import pymysql.cursors
 
-from config import DATABASE_PASSWORD, DATABASE_NAME
+from GatesOfOlympus.config import DATABASE_PASSWORD, DATABASE_NAME
 
 
 class DefaultDataBase:
