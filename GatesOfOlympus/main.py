@@ -11,7 +11,7 @@ from aiogram.enums import ParseMode
 from aiogram.filters import Command
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, WebAppInfo, Message
 from data.UserRepository import UserRepository
-from config import BOT_TOKEN
+from config import *
 
 
 dp = Dispatcher()
