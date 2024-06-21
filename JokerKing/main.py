@@ -35,12 +35,12 @@ async def start(message: Message):
 async def run_bot():
     logging.basicConfig(level=logging.INFO)
     default_properties = DefaultBotProperties(parse_mode=ParseMode.HTML)
-    bot = Bot(token=BOT_TOKEN_APP1_OLYMPUS, default=default_properties)
+    bot = Bot(token=BOT_TOKEN_APP2_JOKER, default=default_properties)
 
     try:
         await dp.start_polling(bot, allowed_updates=dp.resolve_used_update_types())
     except Exception as e:
-        print(f"start (tg web app 1) bot: {e}")
+        print(f"start (tg web app 2) bot: {e}")
 
 
 if __name__ == '__main__':
