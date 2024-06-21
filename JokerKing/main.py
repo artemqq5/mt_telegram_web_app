@@ -10,7 +10,7 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from aiogram.filters import Command
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, WebAppInfo, Message
-from GatesOfOlympus.UserRepository import UserRepository
+from data.UserRepository import UserRepository
 from config import *
 
 
@@ -25,7 +25,7 @@ def kb_menu(url):
 
 @dp.message(Command("start"))
 async def start(message: Message):
-    user = UserRepository().get_user(message.from_user.id)
+    user = UserRepository().get_user(message.from_user.id, APP2_JOKER_BUNDLE)
     if not user:
         return  # organic
 
